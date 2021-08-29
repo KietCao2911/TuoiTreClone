@@ -339,7 +339,7 @@ opacity: var(--opct);
   	height: 100%;
   	position: relative;
   }
-  .second-news ul li a:before{
+  .second-news ul li a::before{
   	position: absolute;
   	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: red; /* Change the color */
@@ -398,7 +398,7 @@ opacity: var(--opct);
 /*Reponsive*/
 
 /*tablet*/
-@media (max-width: 768px) 
+@media (max-width: 768px)
   {
 .max-size-tl{
 	width: 728px;
@@ -433,10 +433,11 @@ bottom: 0;
 border-bottom: 0;
 display: inline-block;
 border:none;
-background-color: #fff;
-z-index: 999;
+background-color:white;
+z-index: 9999;
 }
 .nav3 .list li{
+	background-color: white;
 	font-size: 15px;
 	font-weight: 700;
 	display: block;
@@ -446,7 +447,15 @@ border-bottom: 1px solid rgba(0,0,0,0.3);
 .nav3 .list li:first-child{
 	display: none;
 }
-
+.group-icon-forMB span:nth-child(1){
+	display: none;
+}
+.group-icon-forMB span:nth-child(2){
+	display: none;
+}
+.group-icon-forMB span:nth-child(4){
+	display: none;
+}
 }
 @media (max-width: 450px){
 	.max-size{
