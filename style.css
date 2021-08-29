@@ -351,15 +351,12 @@ opacity: var(--opct);
 .left-bot{
 	margin-top: 10px;
 	width: 100%;
-	max-height: 200px;
+	/*max-height: 200px;*/
 	padding-bottom: 20px;
 }
 
 .left-bot li{
 	width: 33.33333%;
-
-
-
 	height: 100%;
 	font-size: var(--Sc-s);
 	font-weight: 600;
@@ -519,5 +516,22 @@ border-bottom: 1px solid rgba(0,0,0,0.3);
 		object-fit: cover;	
 	}
 
+.nav3 .list{
+position: absolute;
+top:0;left: 0;right: 0;
+bottom: 0;
+border-bottom: 0;
+display: inline-block;
+border:none;
+background-color:white;
+z-index: 9999;
+}
+.nav3 .list li{
+	background-color: white;
+	font-size: 15px;
+	font-weight: 700;
+	display: block;
+padding: 15px;
+border-bottom: 1px solid rgba(0,0,0,0.3);
 
 }
